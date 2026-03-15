@@ -1,32 +1,27 @@
-
 export default function TradeTable() {
-
-  const trades = [
-    { ticker: "AAPL", entry: 100, exit: 110 },
-    { ticker: "TSLA", entry: 200, exit: 195 }
-  ];
-
   return (
-    <table>
+    <div className="rounded bg-gray-800 p-6">
+      <h2 className="mb-4 text-xl font-bold">Recent Trades</h2>
 
-      <thead>
-        <tr>
-          <th>Ticker</th>
-          <th>Entry</th>
-          <th>Exit</th>
-        </tr>
-      </thead>
-
-      <tbody>
-        {trades.map((trade, index) => (
-          <tr key={index}>
-            <td>{trade.ticker}</td>
-            <td>{trade.entry}</td>
-            <td>{trade.exit}</td>
+      <table className="w-full text-left">
+        <thead>
+          <tr className="border-b border-gray-700">
+            <th className="py-2">Date</th>
+            <th>Symbol</th>
+            <th>Side</th>
+            <th>P/L</th>
           </tr>
-        ))}
-      </tbody>
+        </thead>
 
-    </table>
-  );
+        <tbody>
+          <tr className="border-b border-gray-700">
+            <td className="py-3">No trades yet</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  )
 }
