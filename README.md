@@ -30,12 +30,3 @@ Backend:
 - Express
 - MongoDB
 
-## Screenshots
-
-(Add images here later)
-
-## Run Frontend
-
-cd frontend
-npm install
-npm run dev
